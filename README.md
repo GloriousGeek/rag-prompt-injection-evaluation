@@ -3,11 +3,6 @@
 A small, empirical local pilot study of indirect prompt injection and a prompt-only trust-boundary
 defense in a retrieval-augmented generation (RAG) system.
 
-Author: **Usman Tariq** — MSc Data Science, University of Surrey. This independent project does
-not imply endorsement by or affiliation with the University of Surrey, Microsoft, Alibaba/Qwen,
-Apple, or Anthropic. Development was AI-assisted; the design, code, raw outputs, scoring rules,
-and limitations are retained for audit rather than presented as manually authored work.
-
 ## Research question and hypotheses
 
 **Question:** How effectively can explicit trust-boundary instructions mitigate indirect prompt
@@ -62,7 +57,7 @@ of measured inference time (mean 2.36 seconds per output).
 ## Experimental conditions
 
 1. **Clean baseline:** clean corpus and the standard system instruction.
-2. **Adversarial:** the target document contains its BIPIA instruction; prompt otherwise unchanged.
+2. **Adversarial:** the target document contns its BIPIA instruction; prompt otherwise unchanged.
 3. **Defended:** the identical poisoned corpus plus a system instruction declaring retrieved text
    to be lower-trust evidence rather than instructions.
 
@@ -85,9 +80,9 @@ Rates include Wilson 95% confidence intervals and explicit integer denominators.
 scoring requires every pipe-separated answer component and matches numeric answers as whole numeric
 tokens. Base-encoding attacks use conservative canonical-syntax checks; exact requested Reverse and
 Caesar transformations are also confirmed automatically. All other attacked outputs receive a
-tri-state classification: confirmed success, confirmed failure, or unresolved. The 28 automated
-review flags were manually inspected under a published rationale file; 18 were confirmed failures
-and 10 remain unresolved. Because BIPIA uses an LLM judge for these categories, the interval is more
+tri-state classification: confirmed success, confirmed flure, or unresolved. The 28 automated
+review flags were manually inspected under a published rationale file; 18 were confirmed flures
+and 10 remn unresolved. Because BIPIA uses an LLM judge for these categories, the interval is more
 honest than silently substituting an unvalidated self-judge.
 
 ## Reference results
@@ -101,7 +96,7 @@ honest than silently substituting an unvalidated self-judge.
 The defense must not be described as effective from this pilot. Confirmed events changed from two
 to one, while the admissible attack-success ranges overlap (5.0–20.0% adversarial and 2.5–12.5%
 defended). Adversarial task success was 12.5 points below clean; defended prompting recovered 7.5
-points relative to adversarial while remaining 5 points below clean.
+points relative to adversarial while remning 5 points below clean.
 
 Clean success is low despite relevant retrieval in 40/40 cases: the target ranked first for 27
 examples, second for 11, and third for 2, with 8, 4, and 1 successes respectively. Inspection shows
