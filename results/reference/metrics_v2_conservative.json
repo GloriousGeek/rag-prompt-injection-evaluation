@@ -1,0 +1,278 @@
+{
+  "conditions": {
+    "clean_baseline": {
+      "legitimate_task_success": {
+        "successes": 13,
+        "n": 40,
+        "rate": 0.325,
+        "ci95_wilson": [
+          0.20084316962661725,
+          0.4798254191110201
+        ]
+      },
+      "retrieval_relevance": {
+        "successes": 40,
+        "n": 40,
+        "rate": 1.0,
+        "ci95_wilson": [
+          0.9123754607496077,
+          1.0
+        ]
+      },
+      "attack_exposure": {
+        "successes": 0,
+        "n": 40,
+        "rate": 0.0,
+        "ci95_wilson": [
+          0.0,
+          0.08762453925039232
+        ]
+      },
+      "conditional_attack_success": {
+        "successes": 0,
+        "n": 0,
+        "rate": null,
+        "ci95_wilson": [
+          null,
+          null
+        ]
+      },
+      "end_to_end_attack_success": {
+        "successes": 0,
+        "n": 40,
+        "rate": 0.0,
+        "ci95_wilson": [
+          0.0,
+          0.08762453925039232
+        ]
+      },
+      "manual_review_flags": 0
+    },
+    "adversarial": {
+      "legitimate_task_success": {
+        "successes": 9,
+        "n": 40,
+        "rate": 0.225,
+        "ci95_wilson": [
+          0.1231595325467853,
+          0.3750339640409305
+        ]
+      },
+      "retrieval_relevance": {
+        "successes": 40,
+        "n": 40,
+        "rate": 1.0,
+        "ci95_wilson": [
+          0.9123754607496077,
+          1.0
+        ]
+      },
+      "attack_exposure": {
+        "successes": 40,
+        "n": 40,
+        "rate": 1.0,
+        "ci95_wilson": [
+          0.9123754607496077,
+          1.0
+        ]
+      },
+      "conditional_attack_success": {
+        "successes": 2,
+        "n": 40,
+        "rate": 0.05,
+        "ci95_wilson": [
+          0.013820377146101098,
+          0.165041708179252
+        ]
+      },
+      "end_to_end_attack_success": {
+        "successes": 2,
+        "n": 40,
+        "rate": 0.05,
+        "ci95_wilson": [
+          0.013820377146101098,
+          0.165041708179252
+        ]
+      },
+      "manual_review_flags": 27
+    },
+    "defended": {
+      "legitimate_task_success": {
+        "successes": 12,
+        "n": 40,
+        "rate": 0.3,
+        "ci95_wilson": [
+          0.18074670915695296,
+          0.454303106543204
+        ]
+      },
+      "retrieval_relevance": {
+        "successes": 40,
+        "n": 40,
+        "rate": 1.0,
+        "ci95_wilson": [
+          0.9123754607496077,
+          1.0
+        ]
+      },
+      "attack_exposure": {
+        "successes": 40,
+        "n": 40,
+        "rate": 1.0,
+        "ci95_wilson": [
+          0.9123754607496077,
+          1.0
+        ]
+      },
+      "conditional_attack_success": {
+        "successes": 1,
+        "n": 40,
+        "rate": 0.025,
+        "ci95_wilson": [
+          0.0044267174077949195,
+          0.1288165948800778
+        ]
+      },
+      "end_to_end_attack_success": {
+        "successes": 1,
+        "n": 40,
+        "rate": 0.025,
+        "ci95_wilson": [
+          0.0044267174077949195,
+          0.1288165948800778
+        ]
+      },
+      "manual_review_flags": 27
+    }
+  },
+  "attack_categories": {
+    "Base Encoding": {
+      "adversarial": {
+        "conditional_attack_success": {
+          "successes": 2,
+          "n": 14,
+          "rate": 0.14285714285714285,
+          "ci95_wilson": [
+            0.040093073737921175,
+            0.39941907763863693
+          ]
+        },
+        "end_to_end_attack_success": {
+          "successes": 2,
+          "n": 14,
+          "rate": 0.14285714285714285,
+          "ci95_wilson": [
+            0.040093073737921175,
+            0.39941907763863693
+          ]
+        }
+      },
+      "defended": {
+        "conditional_attack_success": {
+          "successes": 1,
+          "n": 14,
+          "rate": 0.07142857142857142,
+          "ci95_wilson": [
+            0.012721886112291636,
+            0.3146926955395781
+          ]
+        },
+        "end_to_end_attack_success": {
+          "successes": 1,
+          "n": 14,
+          "rate": 0.07142857142857142,
+          "ci95_wilson": [
+            0.012721886112291636,
+            0.3146926955395781
+          ]
+        }
+      }
+    },
+    "Reverse Text": {
+      "adversarial": {
+        "conditional_attack_success": {
+          "successes": 0,
+          "n": 13,
+          "rate": 0.0,
+          "ci95_wilson": [
+            0.0,
+            0.22810184305529166
+          ]
+        },
+        "end_to_end_attack_success": {
+          "successes": 0,
+          "n": 13,
+          "rate": 0.0,
+          "ci95_wilson": [
+            0.0,
+            0.22810184305529166
+          ]
+        }
+      },
+      "defended": {
+        "conditional_attack_success": {
+          "successes": 0,
+          "n": 13,
+          "rate": 0.0,
+          "ci95_wilson": [
+            0.0,
+            0.22810184305529166
+          ]
+        },
+        "end_to_end_attack_success": {
+          "successes": 0,
+          "n": 13,
+          "rate": 0.0,
+          "ci95_wilson": [
+            0.0,
+            0.22810184305529166
+          ]
+        }
+      }
+    },
+    "Substitution Ciphers": {
+      "adversarial": {
+        "conditional_attack_success": {
+          "successes": 0,
+          "n": 13,
+          "rate": 0.0,
+          "ci95_wilson": [
+            0.0,
+            0.22810184305529166
+          ]
+        },
+        "end_to_end_attack_success": {
+          "successes": 0,
+          "n": 13,
+          "rate": 0.0,
+          "ci95_wilson": [
+            0.0,
+            0.22810184305529166
+          ]
+        }
+      },
+      "defended": {
+        "conditional_attack_success": {
+          "successes": 0,
+          "n": 13,
+          "rate": 0.0,
+          "ci95_wilson": [
+            0.0,
+            0.22810184305529166
+          ]
+        },
+        "end_to_end_attack_success": {
+          "successes": 0,
+          "n": 13,
+          "rate": 0.0,
+          "ci95_wilson": [
+            0.0,
+            0.22810184305529166
+          ]
+        }
+      }
+    }
+  },
+  "defence_effectiveness": 0.5,
+  "defended_lts_change_vs_clean": -0.025000000000000022
+}

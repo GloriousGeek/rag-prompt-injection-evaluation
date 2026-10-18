@@ -1,0 +1,23 @@
+{
+  "model_id": "mlx-community/Qwen2.5-3B-Instruct-4bit",
+  "model_revision": "4f83f8f146fdf28b512a06562b671d7af4fab457",
+  "model_path": "~/AI-Models/huggingface/hub/models--mlx-community--Qwen2.5-3B-Instruct-4bit/snapshots/4f83f8f146fdf28b512a06562b671d7af4fab457",
+  "quantization": {
+    "bits": 4,
+    "group_size": 64
+  },
+  "max_tokens": 96,
+  "temperature": 0.0,
+  "sampling": "greedy",
+  "seed": 2025,
+  "top_k_retrieval": 3,
+  "python_version": "3.12.4",
+  "platform": "macOS-27.0.1-arm64-arm-64bit",
+  "machine": "arm64",
+  "mlx_version": "0.32.4",
+  "mlx_lm_version": "0.28.3",
+  "sklearn_version": "1.7.2",
+  "hf_home": "~/AI-Models/huggingface",
+  "hf_hub_cache": "~/AI-Models/huggingface/hub",
+  "hf_xet_cache": "~/AI-Models/huggingface/xet"
+}

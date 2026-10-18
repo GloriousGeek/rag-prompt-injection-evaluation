@@ -1,0 +1,9 @@
+# Pinned after environment verification on Apple Silicon / Python 3.12.
+mlx==0.32.4
+mlx-lm==0.28.3
+huggingface-hub==2.2.0
+matplotlib==3.10.7
+pandas==2.3.3
+pytest==8.4.2
+scikit-learn==1.7.2
+transformers==5.20.1

@@ -1,0 +1,17 @@
+{
+  "source_repository": "https://github.com/microsoft/BIPIA",
+  "source_revision": "a004b69ec0dd446e0afd461d98cb5e96e120a5d0",
+  "source_files": {
+    "benchmark/table/test.jsonl": "3d5eaab192b80bada762e3cd7655583a14e5888ba8b845a01f0434e4ccc4291e",
+    "benchmark/text_attack_test.json": "75750e7b4e8b34e8f9d88d89b357aeaaf02bd07f9e493ccd37eda74a0cd7c7f8"
+  },
+  "selection": {
+    "source_rows": 100,
+    "retrieval_eligible_rows": 48,
+    "selected_rows": 40,
+    "seed": 2025,
+    "retrieval_top_k": 3,
+    "method": "sorted simple random sample without replacement from source rows whose own document appears in the clean TF-IDF top-k; attack categories allocated 14 Base Encoding, 13 Reverse Text, and 13 Substitution Ciphers"
+  },
+  "adaptation": "Each selected table is a retrievable document. One pinned BIPIA text attack is appended to its target document for adversarial conditions. Retrieval uses the complete 100-document test corpus. Only attacks with deterministic output-transformation criteria are sampled. This is not an official BIPIA score."
+}
