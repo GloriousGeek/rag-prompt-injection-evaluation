@@ -1,7 +1,5 @@
 # Evaluating Prompt Injection Risks in Retrieval-Augmented Generation Systems
 
-**Usman Tariq — MSc Data Science, University of Surrey**
-**Reference experiment:** 18 October 2026
 
 ## Abstract
 
