@@ -134,7 +134,7 @@ hf download mlx-community/Qwen2.5-3B-Instruct-4bit \
   --revision 4f83f8f146fdf28b512a06562b671d7af4fab457 \
   --cache-dir "$HF_HUB_CACHE"
 
-python -m rag_injection_eval prepare
+python -m rag_injection_eval prepare --force
 MODEL_PATH="$HF_HUB_CACHE/models--mlx-community--Qwen2.5-3B-Instruct-4bit/snapshots/4f83f8f146fdf28b512a06562b671d7af4fab457"
 RUN_DIR="results/runs/reproduction"
 REVIEWED_DIR="results/runs/reproduction-reviewed"
@@ -148,8 +148,9 @@ python -m rag_injection_eval validate "$REVIEWED_DIR"
 python -m pytest
 ```
 
-`prepare` refuses to overwrite the adapted dataset unless `--force` is supplied. `run` creates a
-new timestamped directory by default and supports `--resume`; it never silently replaces raw output.
+The clone already contains the pinned adaptation; `prepare --force` deliberately rebuilds it and
+verifies the source checksums. Without `--force`, `prepare` refuses overwrite. `run` supports
+`--resume` and never silently replaces raw output.
 
 ## Repository map
 
